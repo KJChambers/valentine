@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function ValentineApp() {
   const [accepted, setAccepted] = useState(false);
-  const [noPos, setNoPos] = useState({ x: 0, y: 0 });
+  const [noPos, setNoPos] = useState({ x: 120, y: 0 });
 
   const moveNoButton = () => {
     const x = Math.random() * 200 - 100;
@@ -41,6 +41,7 @@ export default function ValentineApp() {
 
         <motion.button
           onMouseEnter={moveNoButton}
+          initial={{ x: 120, y: 0}}
           animate={{ x: noPos.x, y: noPos.y }}
           transition={{ type: "spring", stiffness: 300 }}
           className="px-6 py-3 text-lg rounded-2xl bg-gray-300 text-gray-700 shadow-lg absolute"
