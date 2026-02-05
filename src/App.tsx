@@ -28,7 +28,7 @@ export default function ValentineApp() {
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-pink-50 gap-8">
       <h1 className="text-4xl font-semibold text-pink-700">
-        Will you be my Valentine? 💘
+        Jazmine, my love, will you be my Valentine? 💘
       </h1>
 
       <div className="flex gap-6 relative">
